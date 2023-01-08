@@ -3,9 +3,51 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{924FD593-EB46-45EF-BECA-366E999DF316}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.editorconfig1 = .editorconfig1
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FD23A61-8D85-4B7E-9DFD-EFB124841185}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FFC63B03-F308-45B1-B7F3-694D6D83480A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encoding.Enigma.Tests", "tests\Encoding.Enigma.Tests\Encoding.Enigma.Tests.csproj", "{1BB391E0-8D6B-473E-A28E-72F974668441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "src\Diagnostics\Diagnostics.csproj", "{88409E12-7E71-4251-BDDA-38BC0EEE9444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encoding", "src\Encoding\Encoding.csproj", "{CE01BB0E-1710-4790-93EE-837D116C0C23}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BB391E0-8D6B-473E-A28E-72F974668441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB391E0-8D6B-473E-A28E-72F974668441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB391E0-8D6B-473E-A28E-72F974668441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB391E0-8D6B-473E-A28E-72F974668441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88409E12-7E71-4251-BDDA-38BC0EEE9444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88409E12-7E71-4251-BDDA-38BC0EEE9444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88409E12-7E71-4251-BDDA-38BC0EEE9444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88409E12-7E71-4251-BDDA-38BC0EEE9444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE01BB0E-1710-4790-93EE-837D116C0C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE01BB0E-1710-4790-93EE-837D116C0C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE01BB0E-1710-4790-93EE-837D116C0C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE01BB0E-1710-4790-93EE-837D116C0C23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BB391E0-8D6B-473E-A28E-72F974668441} = {FFC63B03-F308-45B1-B7F3-694D6D83480A}
+		{88409E12-7E71-4251-BDDA-38BC0EEE9444} = {5FD23A61-8D85-4B7E-9DFD-EFB124841185}
+		{CE01BB0E-1710-4790-93EE-837D116C0C23} = {5FD23A61-8D85-4B7E-9DFD-EFB124841185}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D28DC4C9-F767-496C-A4D7-FC22EE7F0E80}

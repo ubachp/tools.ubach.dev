@@ -1,0 +1,25 @@
+﻿@page "/jwt"
+
+@*<h1 class="float-left"></h1>
+
+<div class="mt-4">
+    <textarea class="" rows="7" style="width:100%;" @bind="@jwt" @bind:event="oninput"></textarea>
+</div>*@
+
+<div class="form-group">
+    <label for="txtJwt">JWT</label>
+    <div class="float-right">Count : @jwt.Length</div>
+    <textarea class="form-control" id="txtJwt" rows="7" @bind="@jwt" @bind:event="oninput"></textarea>
+</div>
+
+<div class="form-group">
+    <label for="txtJwt">Header</label>
+    <div class="float-right">Count : @jwt.Length</div>
+    <textarea class="form-control" id="txtJwt" rows="7" @bind="@jwt" @bind:event="oninput"></textarea>
+</div>
+
+@code {
+    private string jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
+
+
+}
